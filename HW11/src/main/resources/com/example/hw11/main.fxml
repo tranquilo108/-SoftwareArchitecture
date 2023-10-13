@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="920.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1a60a1" height="920.0" layoutX="-1.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="331.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#196cb5" height="872.0" layoutX="-1.0" layoutY="48.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="331.0" />
+      <Rectangle fill="DODGERBLUE" height="920.0" layoutX="330.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="696.0" />
+      <TextField layoutX="72.0" layoutY="11.0" prefHeight="30.0" prefWidth="251.0" promptText="Поиск" style="-fx-background-color: #80c1ff; -fx-background-radius: 10px;">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Text fill="WHITE" layoutX="531.0" layoutY="467.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Выберите кому хотите написать">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Button accessibleRole="MENU_BUTTON" layoutX="8.0" layoutY="11.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="54.0" style="-fx-background-radius: 15; -fx-background-color: DODGERBLUE;" text="≡" textFill="WHITE">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+      <AnchorPane layoutX="8.0" layoutY="56.0" prefHeight="69.0" prefWidth="340.0">
+         <children>
+            <Text fill="WHITE" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Короткое содержание последнего сообщения" textAlignment="CENTER" wrappingWidth="339.7122383117676" />
+            <HBox prefHeight="59.0" prefWidth="240.0">
+               <children>
+                  <ImageView fitHeight="44.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Имя" textAlignment="CENTER">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+               <padding>
+                  <Insets top="5.0" />
+               </padding>
+            </HBox>
+            <HBox layoutX="240.0" prefHeight="59.0" prefWidth="84.0">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Время" textAlignment="CENTER" wrappingWidth="83.05208206176758" />
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
